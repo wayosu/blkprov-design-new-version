@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --primary: #150A33;
+    --secondary: #5E35B1;
+    --dark: #492792;
+    --success: #00CEAB;
+    --danger: #F7345E;
+    --info: #22C8E5;
+    --black: #000000;
+    --white: #fff;
+}
+
+/* Background */
+.bg-gradient-theme {
+    background: linear-gradient(to right,#82009f 0%,#5d34af 50%,#00ceab 100%);
+}
+/* End Background */
+
+/* Button */
+.btn-login-theme {
+    background: var(--success);
+    color: var(--white);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.btn-login-theme:hover {
+    background: var(--info);
+    color: var(--white);
+}
+/* End Button */
+
+/* Custom Bootstrap */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: var(--white) !important;
+}
+
+.navbar .navbar-brand {
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-link {
+    padding: 1.7rem 1rem;
+    outline: none !important;   
+}
+
+.navbar .nav-link.active {
+    color: var(--secondary) !important;
+}
+
+.navbar .dropdown-menu {
+    font-size: 14px;
+    -webkit-box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+    min-width: 13em;
+    margin-top: -10px;
+}
+
+.navbar .dropdown-menu:before {
+    bottom: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: var(--white);
+    border-width: 10px;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background: transparent;
+    color: var(--secondary);
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background: var(--white) !important;
+    }
+    .navbar .nav-link {
+        padding: .5rem 0rem;
+    }
+}
+/* End Custom Bootstrap */
+
+/* Custom Owl Carousel */
+
+/* End Custom Owl Carousel */
