@@ -85,6 +85,19 @@ body {
 }
 /* End Button */
 
+/* Marquee */
+.pengumuman i {
+    color: var(--danger);
+}
+
+.pengumuman marquee a{
+    color: var(--danger);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* End Marquee */
+
 /* Custom Bootstrap */
 .navbar {
     padding-top: 0;
@@ -174,7 +187,7 @@ body {
     margin-bottom: 30px;
 }
 
-.hero a {
+.hero .btn-unique {
     position: relative;
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
@@ -188,7 +201,7 @@ body {
     z-index: 2;
 }
 
-.hero a::before {
+.hero .btn-unique::before {
     position: absolute;
     content: '';
     left: 0px;
@@ -201,16 +214,16 @@ body {
     z-index: 0;
 }
 
-.hero a:hover:before {
+.hero .btn-unique:hover:before {
     opacity: 1;
 }
 
-.hero a span {
+.hero .btn-unique span {
     position: relative;
     z-index: 3;
 }
 
-.hero a i {
+.hero .btn-unique i {
     font-size: 16px;
 }
 
@@ -311,6 +324,11 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background .2s ease-in-out;
+}
+
+.kejuruan .kejuruan-carousel .slider-item a:hover .bg-glass {
+    background: rgba(255, 255, 255, 0.1); 
 }
 
 .galeri .galeri-scale {
