@@ -45,6 +45,44 @@ body {
     background: var(--dark);
     color: var(--white);
 }
+
+.btn-sosmed {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+.btn-sosmed:nth-child(1) {
+    padding: 6px 11px;
+    background: #1da1f2;
+}
+
+.btn-sosmed:nth-child(2) {
+    padding: 6px 14px;
+    background: #1877f2;
+}
+
+.btn-sosmed:nth-child(3) {
+    padding: 6px 11px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.btn-sosmed:nth-child(4) {
+    padding: 6px 8px;
+    background: #ff0000;
+}
+
+.btn-sosmed:hover {
+    color: var(--white);
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .2)
+}
 /* End Button */
 
 /* Custom Bootstrap */
@@ -246,6 +284,16 @@ body {
     color: var(--white);
 }
 
+.kejuruan a {
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.kejuruan a:hover {
+    text-decoration: underline;
+}
+
 .kejuruan .kejuruan-carousel .slider-item a {
     color: var(--white);
 }
@@ -344,6 +392,38 @@ body {
     .galeri h1 {
         margin-top: 20px !important;
     }
+}
+
+.footer {
+    background: var(--primary);
+}
+
+.footer h3 {
+    font-weight: 800;
+    color: var(--white);
+}
+
+.footer .google-yt {
+    transform: scale(.8);
+}
+
+.footer .hr {
+    color: var(--white);
+}
+
+.footer .hr2 {
+    color: var(--danger);
+    height: 3px;
+    width: 50px;
+}
+
+.copyright {
+    background: var(--secondary);
+}
+
+.copyright p {
+    font-size: 14px;
+    color: var(--white);
 }
 /* End Custom Bootstrap */
 
