@@ -56,3 +56,20 @@ new Typed('#typed', {
     typeSpeed: 200,
     showCursor: false,
 });
+
+// Navbar Sticky Top
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        var navbar = $('#navbar');
+
+        // if win >= navbar and not already a sticky
+        if (windowpos >= navbar.position().top && !navbar.hasClass("navbar-fixed-top") ) {
+            navbar.addClass("navbar-fixed-top");
+
+        // if win <= navbar and is a sticky
+        } else if( windowpos <= navbar.position().top && navbar.hasClass("navbar-fixed-top")  ) {
+            navbar.removeClass("navbar-fixed-top");
+        }
+    });
+});

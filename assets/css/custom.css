@@ -20,6 +20,79 @@ body {
 .bg-gradient-theme {
     background: linear-gradient(to right,var(--light) 0%,var(--secondary) 50%,var(--success) 100%);
 }
+
+.bg-header {
+    position: relative;
+}
+
+.bg-header img {
+    width: 100%;
+    z-index: 0;
+    height: calc(100vh - 747px);
+    min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.bg-header::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
+    z-index: 1;
+}
+
+.bg-header .breadcrumb-theme {
+    height: calc(100vh - 747px);
+    min-height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.bg-header .breadcrumb-theme .breadcrumb-text {
+    margin-top: 70px;
+}
+
+.bg-header .breadcrumb-theme h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.bg-header .breadcrumb-theme ul li {
+    color: var(--white);
+}
+
+.bg-header .breadcrumb-theme ul li i {
+    font-size: 8px;
+    color: var(--success);
+}
+
+@media (max-width: 575px) {
+    .bg-header .breadcrumb-theme .breadcrumb-text {
+        margin-top: 70px;
+    }
+    .bg-header .breadcrumb-theme h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 335px) {
+    .bg-header .breadcrumb-theme .breadcrumb-text {
+        margin-top: 50px;
+    }
+    .bg-header .breadcrumb-theme h3 {
+        font-size: 30px;
+    }
+}
 /* End Background */
 
 /* Button */
@@ -98,6 +171,24 @@ body {
 }
 /* End Marquee */
 
+/* Content */
+.content .content-items {
+    margin: 80px 0;
+}
+
+.content .content-items img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content .content-items p {
+    text-align: justify;
+    font-size: 18px;
+}
+/* End Content */
+
 /* Custom Bootstrap */
 .navbar {
     padding-top: 0;
@@ -156,6 +247,22 @@ body {
 .navbar .dropdown-menu .dropdown-item:hover {
     background: transparent;
     color: var(--success);
+}
+
+#navbar {
+    transition: all .2s ease-in-out;
+}
+
+#navbar.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 0;
+    transition: all .2s ease-in-out;
+    background: rgba(255, 255, 255, 0.96) !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 999;
 }
 
 @media (max-width: 1200px) {
