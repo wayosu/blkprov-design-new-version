@@ -191,6 +191,42 @@ body {
     text-align: justify;
     font-size: 18px;
 }
+
+.content .content-items .kurikulum .card {
+    border-left: 10px solid var(--secondary) !important;
+}
+
+.content .content-items .kurikulum .card .card-body .bg-name {
+    background: var(--white);
+    padding: 20px 0;
+}
+
+.content .content-items .kurikulum .card .card-body .bg-name h4 {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 20px;
+    background: linear-gradient(to right,var(--secondary) 0%,var(--dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content .content-items .kurikulum .card .card-body .btn-download {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--dark);
+    background: var(--white);
+    border: 2px solid var(--dark);
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+}
+
+.content .content-items .kurikulum .card .card-body .btn-download:hover {
+    color: var(--white);
+    background: var(--dark);
+}
 /* End Content */
 
 /* Custom Bootstrap */
