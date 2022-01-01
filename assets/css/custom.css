@@ -23,16 +23,14 @@ body {
 
 .bg-header {
     position: relative;
-}
-
-.bg-header img {
-    width: 100%;
-    z-index: 0;
-    height: calc(100vh - 747px);
-    min-height: 230px;
+    height: calc(100vh - 617px);
+    max-height: 700px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-position: center;
-    z-index: 1;
+    overflow: hidden;
+    display: block;
 }
 
 .bg-header::after {
@@ -43,54 +41,77 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
     content: "";
-    z-index: 1;
+    z-index: 0;
 }
 
-.bg-header .breadcrumb-theme {
-    height: calc(100vh - 747px);
-    min-height: 230px;
+.page-title-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2;
+    z-index: 1;
+    width: 70%;
 }
 
-.bg-header .breadcrumb-theme .breadcrumb-text {
-    margin-top: 70px;
+.page-title-content .page-title {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-.bg-header .breadcrumb-theme h3 {
+.page-title-content .page-title h3 {
     font-size: 40px;
     font-weight: 800;
     color: var(--white);
 }
 
-.bg-header .breadcrumb-theme ul li {
+.page-title-content .page-breadcrumbs a,
+.page-title-content .page-breadcrumbs span {
+    text-decoration: none;
     color: var(--white);
 }
 
-.bg-header .breadcrumb-theme ul li i {
-    font-size: 8px;
-    color: var(--success);
+.page-title-content .page-breadcrumbs a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 575px) {
-    .bg-header .breadcrumb-theme .breadcrumb-text {
-        margin-top: 70px;
+.page-title-content .page-breadcrumbs .current {
+    color: #aaaaaa;
+}
+
+.page-title-content .page-breadcrumbs .current:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+    .bg-header {
+        height: calc(100vh - 517px);
     }
-    .bg-header .breadcrumb-theme h3 {
+}
+
+@media (max-width: 1200px) {
+    .bg-header {
+        height: calc(100vh - 417px);
+    }
+}
+
+@media (max-width: 992px) {
+    .bg-header {
+        height: calc(100vh - 317px);
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-header {
+        height: calc(100vh - 217px);
+    }
+    .page-title-content .page-title h3 {
         font-size: 30px;
     }
-}
-
-@media (max-width: 335px) {
-    .bg-header .breadcrumb-theme .breadcrumb-text {
-        margin-top: 80px;
-    }
-    .bg-header .breadcrumb-theme h3 {
-        font-size: 25px;
+    .page-title-content .page-breadcrumbs a,
+    .page-title-content .page-breadcrumbs span {
+       font-size: 14px;
     }
 }
 /* End Background */
@@ -411,6 +432,10 @@ body {
     
 }
 
+.berita .card .card-body p {
+    font-size: 14px;
+}
+
 .berita .card .card-body a {
     color: var(--black);
     -webkit-transition: .3s ease-in-out;
@@ -589,6 +614,38 @@ body {
 .copyright p {
     font-size: 14px;
     color: var(--white);
+}
+
+.page-link {
+    color: var(--primary);
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    width: 35px;
+    height: 35px;
+    padding: 7px 13px;
+    border-radius: 50% !important;
+    margin: 0 6px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: var(--white) !important;
+    background-color: var(--dark) !important;
+    border-color: #ddd !important;
+}
+
+
+.pagination > .active > .page-link {
+    background: linear-gradient(to right,var(--dark) 0%,var(--secondary) 100%) !important;
+    color: #fff;
+    border-color: #ddd !important;
 }
 /* End Custom Bootstrap */
 
