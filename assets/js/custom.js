@@ -1,5 +1,4 @@
 // Owl Carousel Initialization
-
 $('.home-slider').owlCarousel({
     loop: true,
     autplay: true,
