@@ -347,14 +347,49 @@ body {
     color: var(--white);
     background: var(--dark);
 }
+
+.content .content-items .kurikulum .collapse ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.content .content-items .kurikulum .collapse ul li a:hover {
+    text-decoration: underline;
+}
 /* End Content */
 
 /* Sidebar */
-.sidebar {
+/* .sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
+} */
+/* End Sidebar */
+
+/* Scroll */
+.overflow-scroll-theme {
+    overflow-x: auto;
+    overflow-y: hidden;
 }
+
+.overflow-scroll-theme::-webkit-scrollbar {
+    height: 13px;
+}
+
+.overflow-scroll-theme::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+
+.overflow-scroll-theme::-webkit-scrollbar-thumb {
+    border: 3px solid #eee;
+	background: rgba(21, 10, 51, 0.3);
+}
+
+.overflow-scroll-theme::-webkit-scrollbar-thumb:hover {
+    background: rgba(21, 10, 51, 0.6);
+}
+/* End Scroll */
 
 .pengumuman-terbaru h5,
 .galeri-terbaru h5 {
